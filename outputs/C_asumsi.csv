@@ -1,0 +1,8 @@
+hipotesis,pemeriksaan,hasil
+H1,"n kondisi & Shapiro-Wilk log-median, Small (4-7 cm)",n=60; p=0.931
+H1,"n kondisi & Shapiro-Wilk log-median, Medium (8-10 cm)",n=64; p=0.001
+H1,"n kondisi & Shapiro-Wilk log-median, Large (11-15 cm)",n=64; p=0.000
+H1,"Homogenitas varians (Brown-Forsythe, log)",p=0.596
+H2,Shapiro-Wilk selisih berpasangan (mentah),p=0.261; n pasangan=120
+H2,Shapiro-Wilk selisih berpasangan (ternormalkan),p=0.000; n pasangan=120
+H3,Shapiro-Wilk & skewness selisih (simetri untuk Wilcoxon),p=0.417; skew=0.29; n pasangan=83

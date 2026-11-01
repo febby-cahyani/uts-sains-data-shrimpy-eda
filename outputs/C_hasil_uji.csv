@@ -1,0 +1,18 @@
+hipotesis,subset,n,estimasi,arti_estimasi,ci_lo,ci_hi,arti_ci,p,ukuran_efek,nilai_efek,kesimpulan
+H1 omnibus (Kruskal-Wallis),3 kelas,188,152.65780810255546,statistik H,,,,7.092154056280557e-34,epsilon^2,0.8143665302840836,ada perbedaan
+H1 tren terurut (Jonckheere-Terpstra),S<M<L,188,13.700415081300363,z,,,,0.0,-,,tren naik
+"H1 pasangan kelas (Mann-Whitney, Holm)",Medium vs Small,-,1.8387122302571237,rasio median (kelas besar / kecil),0.8786197916666667,0.9755208333333333,CI95% Cliff's delta,6.066409931576927e-19,Cliff's delta,0.934375,beda
+"H1 pasangan kelas (Mann-Whitney, Holm)",Large vs Medium,-,1.6674086029946833,rasio median (kelas besar / kecil),0.8115234375,0.9731567382812499,CI95% Cliff's delta,1.1096447979822382e-18,Cliff's delta,0.904296875,beda
+"H1 pasangan kelas (Mann-Whitney, Holm)",Large vs Small,-,3.065884591162269,rasio median (kelas besar / kecil),0.9973828125,1.0,CI95% Cliff's delta,2.5792821092916784e-21,Cliff's delta,0.9994791666666667,beda
+"H2 ketajaman mentah (Wilcoxon berpasangan, Holm)",semua,120,3.5777012536385637,rasio median Bawah/Atas,3.386901160498655,4.005606867732047,CI95% rasio,1.5775613697219483e-20,rank-biserial r,1.0,Bawah > Atas
+"H2 ketajaman mentah (Wilcoxon berpasangan, Holm)",Small,40,5.256104226603507,rasio median Bawah/Atas,4.295529132112244,6.442288429999052,CI95% rasio,1.2732925824820995e-11,rank-biserial r,1.0,Bawah > Atas
+"H2 ketajaman mentah (Wilcoxon berpasangan, Holm)",Medium,40,3.6960299857782455,rasio median Bawah/Atas,3.5545465448371636,4.406478472688547,CI95% rasio,1.2732925824820995e-11,rank-biserial r,1.0,Bawah > Atas
+"H2 ketajaman mentah (Wilcoxon berpasangan, Holm)",Large,40,2.7534633526529886,rasio median Bawah/Atas,2.4173943278982883,3.1388323391017514,CI95% rasio,1.2732925824820995e-11,rank-biserial r,1.0,Bawah > Atas
+"H2 ketajaman ternormalkan (Wilcoxon berpasangan, Holm)",semua,120,2.176187827275107,rasio median Bawah/Atas,1.655826442031202,2.7852119126987533,CI95% rasio,2.6617417119873865e-05,rank-biserial r,0.4738292011019284,Bawah > Atas
+"H2 ketajaman ternormalkan (Wilcoxon berpasangan, Holm)",Small,40,3.3709886731074294,rasio median Bawah/Atas,2.1037664667972034,6.207367355585494,CI95% rasio,0.000544467022336903,rank-biserial r,0.6365853658536585,Bawah > Atas
+"H2 ketajaman ternormalkan (Wilcoxon berpasangan, Holm)",Medium,40,2.647586789474195,rasio median Bawah/Atas,1.5768189337785243,3.581054228741862,CI95% rasio,0.000544467022336903,rank-biserial r,0.651219512195122,Bawah > Atas
+"H2 ketajaman ternormalkan (Wilcoxon berpasangan, Holm)",Large,40,1.5113159040884794,rasio median Bawah/Atas,0.9995182671765217,2.0876556217658657,CI95% rasio,0.2765956516359438,rank-biserial r,0.2,tidak beda
+"H3 ekuivalensi lampu (TOST Wilcoxon, margin +-10%)",semua,83,1.0238454764094984,rasio median luas box Bawah/Atas,1.0042030080107076,1.0865985127515858,CI90% rasio,0.02287681696198616,CI90% dalam margin?,True,ekuivalen
+"H3 ekuivalensi lampu (TOST Wilcoxon, margin +-10%)",Small,25,1.0771057746303456,rasio median luas box Bawah/Atas,1.020422499301704,1.1506280229048702,CI90% rasio,0.34575942158699036,CI90% dalam margin?,False,tidak terbukti ekuivalen
+"H3 ekuivalensi lampu (TOST Wilcoxon, margin +-10%)",Medium,29,1.0042030080107076,rasio median luas box Bawah/Atas,0.9925619077815917,1.1273396717395656,CI90% rasio,0.09506336413323879,CI90% dalam margin?,False,tidak terbukti ekuivalen
+"H3 ekuivalensi lampu (TOST Wilcoxon, margin +-10%)",Large,29,1.0107565271807673,rasio median luas box Bawah/Atas,0.9021264734128497,1.081176403383165,CI90% rasio,0.0577258076518774,CI90% dalam margin?,False,tidak terbukti ekuivalen

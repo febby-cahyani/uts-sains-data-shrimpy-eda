@@ -1,0 +1,10 @@
+isu,bukti,keputusan,alasan,risiko
+Label hilang,"69,487 frame (37.1%)","Dikecualikan per analisis, tidak diimputasi",Luas box tidak bisa dihitung tanpa label; imputasi membuat data buatan. Uji blur tidak butuh label sehingga tetap memakai semua frame.,"Kesimpulan ukuran objek tidak berlaku untuk kondisi tanpa label (mis. Hitam, Hijau-Atas)."
+Outlier ekstrem (box > 50% frame),2 frame,Dikeluarkan dari analisis ukuran,Box yang menutup separuh frame hampir pasti salah label.,Bisa membuang pose valid; diuji pada sensitivitas.
+Outlier IQR (k=1.5),91 frame,Dipertahankan; analisis memakai median per kondisi,Variasi pose dan jarak udang adalah variasi nyata; median tahan terhadap nilai ekstrem.,"Jika sebagian adalah salah label, median bergeser sedikit; diuji pada sensitivitas S1."
+Sebaran miring,skew luas 0.37 -> -0.52; blur 3.64 -> 0.52,Transformasi log,Menstabilkan skala dan membuat selisih menjadi rasio yang mudah ditafsirkan.,"Hasil dibaca sebagai rasio, bukan selisih absolut."
+Resolusi tidak standar,"2,398 citra (1.3%)",Memakai luas relatif terhadap frame,Skala piksel berbeda antar resolusi.,Blur score tetap bergantung resolusi; diuji pada sensitivitas S2.
+Frame berurutan,rho lag-1 median 0.43; n efektif median 255 dari 1000 frame/kondisi,Unit analisis = kondisi (agregasi),Frame bersebelahan tidak independen; uji tingkat frame menggembungkan signifikansi.,Jumlah unit berkurang (puluhan kondisi); kuasa uji lebih rendah.
+Polygon kasar (<= 5 titik),"11,219 frame",Dipertahankan; luas = bounding box polygon,Bounding box sebanding antar kelas walau halus-kasarnya label berbeda.,Diuji pada sensitivitas S4.
+Kelas tidak seimbang,"Small 41,011, Medium 66,251, Large 79,838",Tiap kondisi berbobot sama,Agregasi ke kondisi menyamakan sumbangan tiap kelas.,Kondisi dengan sedikit frame punya estimasi kurang stabil (filter N_MIN_LABEL).
+Rencana split,188 kondisi layak,"Split per kondisi, stratifikasi per kelas",Mencegah kebocoran antar frame berurutan.,Kondisi berbeda dari rekaman yang sama bisa serupa; dicatat sebagai keterbatasan.
